@@ -1,0 +1,298 @@
+/*
+ * Globals
+ */
+
+.handwritten {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.quiet {
+  color: #999;
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.smaller {
+  font-size: 0.7em;
+}
+body {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+thead {
+  background-color: #eee;
+}
+code.pre {
+  padding: 9.5px;
+  display: block;
+  word-wrap: break-word;
+}
+
+.note {
+  color: #aaa;
+}
+/* Links */
+a {
+  text-decoration: underline;
+}
+
+/* Custom default button */
+.btn {
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+  text-decoration: none;
+}
+.btn-default {
+  background-color: transparent;
+  color: #428bca;
+  border: 1px solid #428bca;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #428bca;
+  border: 1px solid #428bca; /* bootstrap default makes this grey */
+  color: white;
+}
+.btn-success {
+  background-color: #00ff00;
+  color: white;
+  border: 1px solid #00ff00;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: white;
+  border: 1px solid #00ff00; /* bootstrap default makes this grey */
+  color: #00ff00;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  background: url('../textures/linedpaper_@2x.png');
+}
+body {
+  color: #333;
+  /* text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  */
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  text-align: center;
+}
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.masthead-brand h1 {
+    font-size: 1.3em;
+}
+.masthead-brand img {
+  padding-right: 15px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  text-decoration: none;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* IE8 proofing */
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #fff200;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #333;
+  border-bottom-color: #fff200;
+}
+/*
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+*/
+
+/*
+ * Cover
+ */
+
+quote {
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+  padding-bottom: 20px;
+  color: #555;
+  display: block;
+  font-size: 30px;
+}
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.hero p {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.cover-heading {
+  margin-bottom: 50px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+section {
+  padding-top:30px;
+}
+section h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  font-size: 0.8em;
+  padding-top: 10px;
+  border-top: 1px solid #aaa;
+  color: white; /* IE8 proofing */
+  text-align: center;
+}
+.mastfoot a {
+  color: white;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .hero p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .masthead {
+    top: 0;
+  }
+  .site-wrapper-inner {
+    padding-bottom: 102px; /* to offset the footer when we fix the position on wide viewports */
+  }
+  .mastfoot {
+    background-color: #ff6600;
+    position: fixed;
+    bottom: 0;
+  }
+  .mastfoot img {
+    padding-right: 8px;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .cover-container {
+    width: 700px;
+  }
+}
+
+td, th {
+  white-space: normal !important;
+}
+.videowrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.eventbrite:hover {opacity:0.7}
