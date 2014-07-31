@@ -14,7 +14,7 @@
   text-decoration: underline;
 }
 .bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .italic {
   font-style: italic;
